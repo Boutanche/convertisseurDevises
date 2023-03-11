@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="Classe Montant + MontantTest">
-      <change afterPath="$PROJECT_DIR$/src/convertisseur/poo/Convertisseur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/convertisseur/poo/Montant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testsConvertisseur/testsPoo/MontantTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/convertisseur/poo/Devise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertisseur/poo/Devise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +51,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MontantTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="convertisseur.Main" />
+      <module name="convertisseurDevises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="convertisseur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DeviseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="convertisseurDevises" />
       <extension name="coverage">
@@ -68,22 +77,6 @@
       <option name="MAIN_CLASS_NAME" value="testsConvertisseur.testsPoo.DeviseTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeviseTest.testGetNom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="convertisseurDevises" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsConvertisseur.testsPoo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsConvertisseur.testsPoo" />
-      <option name="MAIN_CLASS_NAME" value="testsConvertisseur.testsPoo.DeviseTest" />
-      <option name="METHOD_NAME" value="testGetNom" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,19 +129,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.MontantTest" />
       <item itemvalue="JUnit.MontantTest.testGetDevise" />
       <item itemvalue="JUnit.MontantTest.testToString" />
       <item itemvalue="JUnit.DeviseTest" />
-      <item itemvalue="JUnit.DeviseTest.testGetNom" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DeviseTest" />
         <item itemvalue="JUnit.MontantTest" />
         <item itemvalue="JUnit.MontantTest.testGetDevise" />
         <item itemvalue="JUnit.MontantTest.testToString" />
-        <item itemvalue="JUnit.DeviseTest" />
-        <item itemvalue="JUnit.DeviseTest.testGetNom" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678546729808</updated>
-      <workItem from="1678546730896" duration="4581000" />
+      <workItem from="1678546730896" duration="5325000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1678546913215</created>
@@ -197,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678549243268</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Classe Montant + MontantTest">
+      <created>1678551399697</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678551399697</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

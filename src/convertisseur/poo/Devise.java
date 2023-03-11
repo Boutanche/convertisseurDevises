@@ -84,4 +84,14 @@ public class Devise {
         }
         return nom.equals(devise.nom) && symbole.equals(devise.symbole) && valeurEnEuro.equals(devise.valeurEnEuro);
     }
+
+    /**
+     * hashCode method.
+     * Permet de générer un hashcode pour une devise.
+     * @return int contenant le hashcode de la devise.
+     */
+    @Override
+    public int hashCode() {
+        return 31 * nom.hashCode() + symbole.hashCode() + valeurEnEuro.hashCode();
+    }
 }
