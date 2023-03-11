@@ -68,4 +68,20 @@ public class Devise {
     public Float getValeurEnEuro() {
         return this.valeurEnEuro;
     }
+
+    /**
+     * equals method.
+     * Permet de comparer deux devises.
+     * @param o l'objet à comparer
+     * @return boolean true si les deux devises sont égales, false sinon
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Devise devise)) {
+            return false;
+        }
+        return nom.equals(devise.nom) && symbole.equals(devise.symbole) && valeurEnEuro.equals(devise.valeurEnEuro);
+    }
 }
