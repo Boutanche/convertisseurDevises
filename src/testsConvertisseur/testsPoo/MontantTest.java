@@ -20,8 +20,8 @@ public class MontantTest {
     @Test
     public void testConstructor() {
         System.out.println("testConstructor");
-        Float nombreDevise = 1.0F;
-        Devise devise = new Devise("Euro", "€", 1.0F);
+        Float nombreDevise = 1.00F;
+        Devise devise = new Devise("Euro", "€", 1.00F);
         Montant instance = new Montant(nombreDevise, devise);
         assertEquals(nombreDevise, instance.getNombreDevise());
         assertEquals(devise, instance.getDevise());
@@ -33,10 +33,10 @@ public class MontantTest {
     @Test
     public void testGetNombreDevise() {
         System.out.println("testGetNombreDevise");
-        Float nombreDevise = 1.0F;
-        Devise devise = new Devise("Euro", "€", 1.0F);
+        Float nombreDevise = 1.00F;
+        Devise devise = new Devise("Euro", "€", 1.00F);
         Montant instance = new Montant(nombreDevise, devise);
-        Float expResult = 1.0F;
+        Float expResult = 1.00F;
         Float result = instance.getNombreDevise();
         assertEquals(expResult, result);
     }
@@ -47,10 +47,10 @@ public class MontantTest {
     @Test
     public void testGetDevise() {
         System.out.println("testGetDevise");
-        Float nombreDevise = 1.0F;
-        Devise devise = new Devise("Euro", "€", 1.0F);
+        Float nombreDevise = 1.00F;
+        Devise devise = new Devise("Euro", "€", 1.00F);
         Montant instance = new Montant(nombreDevise, devise);
-        Devise expResult = new Devise("Euro", "€", 1.0F);
+        Devise expResult = new Devise("Euro", "€", 1.00F);
         Devise result = instance.getDevise();
         assertEquals(expResult, result);
     }
@@ -61,8 +61,8 @@ public class MontantTest {
     @Test
     public void testToString() {
         System.out.println("testToString");
-        Float nombreDevise = 1.0F;
-        Devise devise = new Devise("Euro", "€", 1.0F);
+        Float nombreDevise = 1.00F;
+        Devise devise = new Devise("Euro", "€", 1.00F);
         Montant instance = new Montant(nombreDevise, devise);
         String expResult = "Montant{nombreDevise=1.0, devise=Devise{nom=Euro, symbole=€, valeurEnEuro=1.0}}";
         String result = instance.toString();
