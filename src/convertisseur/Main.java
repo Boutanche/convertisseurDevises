@@ -1,5 +1,6 @@
 package convertisseur;
 
+import convertisseur.fonctionnelle.ConvertisseurFonctionnelle;
 import convertisseur.poo.Convertisseur;
 import convertisseur.poo.Devise;
 import convertisseur.poo.Montant;
@@ -40,11 +41,11 @@ public class Main {
         System.out.println("En utilisant la Programmation Fonctionnelle :");
         System.out.println(separator);
         Montant dixDollar2 = new Montant(10.00F, dollar);
-        UnaryOperator<Montant> convertirVersEuro = Convertisseur.convertirVersEuro();
+        UnaryOperator<Montant> convertirVersEuro = ConvertisseurFonctionnelle.convertirVersEuro();
         Montant converti3 = convertirVersEuro.apply(dixDollar2);
         System.out.println("10.00 Dollar US = " + converti3.getNombreDevise() + " " + converti3.getDevise().getSymbole());
         Montant dixEuro2 = new Montant(10.00F, euro);
-        UnaryOperator<Montant> convertirVersDollar = Convertisseur.convertirVersDevise(dollar);
+        UnaryOperator<Montant> convertirVersDollar = ConvertisseurFonctionnelle.convertirVersDevise(dollar);
         Montant converti4 = convertirVersDollar.apply(dixEuro2);
         System.out.println("10.00 Euro = " + converti4.getNombreDevise() + " " + converti4.getDevise().getSymbole());
         System.out.println();
@@ -52,16 +53,16 @@ public class Main {
         System.out.println(" Curryfié avec Programmation Fonctionnelle : ");
         System.out.println(separator);
         Montant dixDollar3 = new Montant(10.00F, dollar);
-        UnaryOperator<Montant> convertirVersEuroCurry = Convertisseur.convertirVersEuroCurryfie();
+        UnaryOperator<Montant> convertirVersEuroCurry = ConvertisseurFonctionnelle.convertirVersEuroCurryfie();
         Montant converti5 = convertirVersEuroCurry.apply(dixDollar3);
         System.out.println("10.00 Dollar US = " + converti5.getNombreDevise() + " " + converti5.getDevise().getSymbole());
         Devise yen = new Devise("Yen", "¥", 0.007F);
-        Function<Devise, UnaryOperator<Montant>> fabriquerConvertisseurEuroVersYen = Convertisseur.fabriquerConvertisseur(yen, euro);
+        Function<Devise, UnaryOperator<Montant>> fabriquerConvertisseurEuroVersYen = ConvertisseurFonctionnelle.fabriquerConvertisseur(yen, euro);
         Montant unEuro = new Montant(1.00F, euro);
         Montant dixEurosCinquanteCentimes = new Montant(10.50F, euro);
         Montant converti6 = fabriquerConvertisseurEuroVersYen.apply(yen).apply(unEuro);
         Montant converti7 = fabriquerConvertisseurEuroVersYen.apply(yen).apply(dixEurosCinquanteCentimes);
-        Function<Devise, UnaryOperator<Montant>> fabriquerConvertisseurEuroVersDollar = Convertisseur.fabriquerConvertisseur(dollar, euro);
+        Function<Devise, UnaryOperator<Montant>> fabriquerConvertisseurEuroVersDollar = ConvertisseurFonctionnelle.fabriquerConvertisseur(dollar, euro);
         Montant converti8 = fabriquerConvertisseurEuroVersDollar.apply(dollar).apply(unEuro);
         System.out.println("1.00 Euro = " + converti6.getNombreDevise() + " " + converti6.getDevise().getSymbole());
         System.out.println("10.50 Euro = " + converti7.getNombreDevise() + " " + converti7.getDevise().getSymbole());

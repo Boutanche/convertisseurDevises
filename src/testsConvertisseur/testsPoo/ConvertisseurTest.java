@@ -1,5 +1,6 @@
 package testsConvertisseur.testsPoo;
 
+import convertisseur.fonctionnelle.ConvertisseurFonctionnelle;
 import convertisseur.poo.Convertisseur;
 import convertisseur.poo.Devise;
 import convertisseur.poo.Montant;
@@ -21,6 +22,7 @@ public class ConvertisseurTest {
      * Plan de test de la méthode convertir.
      * 1. Test de la conversion d'un montant en euro vers un montant en dollar.
      * TODO : Ajouter d'autres tests.
+     * TODO : Separer les classes de test Convertisseur et ConvertisseurF.
      */
 
     /**
@@ -55,7 +57,7 @@ public class ConvertisseurTest {
         System.out.println("testConvertirVersEuro : est OK");
         Montant montant = new Montant(1.00F, DEVISE_DOLLAR);
         Montant expResult = new Montant(0.94F, DEVISE_EURO);
-        Montant result = Convertisseur.convertirVersEuro().apply(montant);
+        Montant result = ConvertisseurFonctionnelle.convertirVersEuro().apply(montant);
         assertEquals(expResult, result);
     }
 
@@ -67,7 +69,7 @@ public class ConvertisseurTest {
         System.out.println("testConvertirVersDevise : est OK");
         Montant montant = new Montant(1.00F, DEVISE_EURO);
         Montant expResult = new Montant(1.06F, DEVISE_DOLLAR);
-        Montant result = Convertisseur.convertirVersDevise(DEVISE_DOLLAR).apply(montant);
+        Montant result = ConvertisseurFonctionnelle.convertirVersDevise(DEVISE_DOLLAR).apply(montant);
         assertEquals(expResult, result);
     }
 
@@ -79,7 +81,7 @@ public class ConvertisseurTest {
         System.out.println("testConvertirVersDevise2 : est OK");
         Montant montant = new Montant(1.00F, DEVISE_EURO);
         Montant expResult = new Montant(1.06F, DEVISE_DOLLAR);
-        Montant result = Convertisseur.convertirVersDevise(DEVISE_DOLLAR).apply(montant);
+        Montant result = ConvertisseurFonctionnelle.convertirVersDevise(DEVISE_DOLLAR).apply(montant);
         assertEquals(expResult, result);
     }
 }
