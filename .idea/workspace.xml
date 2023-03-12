@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="Séparation poo / fonctionnel">
+    <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="Refactorisation">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/convertisseur/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertisseur/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678546729808</updated>
       <workItem from="1678546730896" duration="26285000" />
-      <workItem from="1678622418938" duration="9172000" />
+      <workItem from="1678622418938" duration="9602000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1678546913215</created>
@@ -294,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678635730629</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Refactorisation">
+      <created>1678645328199</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1678645328199</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +342,8 @@
     <MESSAGE value="Ajout d'un test sur ConvertisseurTest" />
     <MESSAGE value="README" />
     <MESSAGE value="Séparation poo / fonctionnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Séparation poo / fonctionnel" />
+    <MESSAGE value="Refactorisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactorisation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/convertisseurDevises$ConvertisseurTest.ic" NAME="ConvertisseurTest Coverage Results" MODIFIED="1678561393387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
