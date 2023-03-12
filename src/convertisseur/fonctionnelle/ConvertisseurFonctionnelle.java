@@ -1,3 +1,9 @@
+/**
+ * ConvertisseurFonctionnelle class.
+ * @author BBE
+ * @version 1.0
+ * @see convertisseur.poo.Convertisseur
+ */
 package convertisseur.fonctionnelle;
 
 import convertisseur.poo.Devise;
@@ -7,7 +13,19 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
+/**
+ * ConvertisseurFonctionnelle class.
+ * @author BBE
+ * @version 1.0
+ */
 public class ConvertisseurFonctionnelle {
+
+    /**
+     * Constructeur privé pour empêcher l'instanciation de la classe.
+     */
+    private ConvertisseurFonctionnelle() {
+        // Constructeur privé pour empêcher l'instanciation de la classe.
+    }
 
     /**
      * Version fonctionnelle de la méthode convertir qui va convertir en Euros
