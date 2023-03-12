@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="Ajout d'un test">
+    <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="README">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testsConvertisseur/testsPoo/ConvertisseurTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testsConvertisseur/testsPoo/ConvertisseurTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678546729808</updated>
       <workItem from="1678546730896" duration="26285000" />
-      <workItem from="1678622418938" duration="4635000" />
+      <workItem from="1678622418938" duration="5016000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1678546913215</created>
@@ -245,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678633069649</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ajout d'un test sur ConvertisseurTest">
+      <created>1678633510957</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678633510957</updated>
+    </task>
+    <task id="LOCAL-00014" summary="README">
+      <created>1678633756498</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678633756498</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +297,9 @@
     <MESSAGE value="Les devises" />
     <MESSAGE value="Commentaires" />
     <MESSAGE value="Ajout d'un test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'un test" />
+    <MESSAGE value="Ajout d'un test sur ConvertisseurTest" />
+    <MESSAGE value="README" />
+    <option name="LAST_COMMIT_MESSAGE" value="README" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/convertisseurDevises$ConvertisseurTest.ic" NAME="ConvertisseurTest Coverage Results" MODIFIED="1678561393387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
