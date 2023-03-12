@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="Conclusion">
+    <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="Commentaires">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/convertisseur/poo/Convertisseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertisseur/poo/Convertisseur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ConvertisseurTest.testConvertirVersDevise2">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="convertisseur.Main" />
       <module name="convertisseurDevises" />
@@ -67,21 +66,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConvertisseurTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="convertisseurDevises" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsConvertisseur.testsPoo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsConvertisseur.testsPoo" />
-      <option name="MAIN_CLASS_NAME" value="testsConvertisseur.testsPoo.ConvertisseurTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,6 +81,22 @@
       <option name="PACKAGE_NAME" value="testsConvertisseur.testsPoo" />
       <option name="MAIN_CLASS_NAME" value="testsConvertisseur.testsPoo.ConvertisseurTest" />
       <option name="METHOD_NAME" value="testConvertirVersDevise" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConvertisseurTest.testConvertirVersDevise2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="convertisseurDevises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsConvertisseur.testsPoo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsConvertisseur.testsPoo" />
+      <option name="MAIN_CLASS_NAME" value="testsConvertisseur.testsPoo.ConvertisseurTest" />
+      <option name="METHOD_NAME" value="testConvertirVersDevise2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,18 +134,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.ConvertisseurTest" />
+      <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersDevise2" />
       <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersDevise" />
       <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersEuro" />
       <item itemvalue="JUnit.testsConvertisseur.testsPoo in convertisseurDevises" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersDevise2" />
+        <item itemvalue="JUnit.testsConvertisseur.testsPoo in convertisseurDevises" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersDevise" />
         <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersEuro" />
-        <item itemvalue="JUnit.ConvertisseurTest" />
-        <item itemvalue="JUnit.testsConvertisseur.testsPoo in convertisseurDevises" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +158,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678546729808</updated>
       <workItem from="1678546730896" duration="26285000" />
-      <workItem from="1678622418938" duration="3947000" />
+      <workItem from="1678622418938" duration="4255000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1678546913215</created>
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678632317496</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commentaires">
+      <created>1678632963584</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678632963584</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +274,9 @@
     <MESSAGE value="Montant.hashCode();" />
     <MESSAGE value="Poo convertisseur" />
     <MESSAGE value="Conclusion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conclusion" />
+    <MESSAGE value="Les devises" />
+    <MESSAGE value="Commentaires" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commentaires" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/convertisseurDevises$ConvertisseurTest.ic" NAME="ConvertisseurTest Coverage Results" MODIFIED="1678561393387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

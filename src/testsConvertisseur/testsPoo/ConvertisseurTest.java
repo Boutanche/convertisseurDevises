@@ -69,4 +69,16 @@ public class ConvertisseurTest {
         Montant result = Convertisseur.convertirVersDevise(new Devise("Dollar", "$", 0.94F)).apply(montant);
         assertEquals(expResult, result);
     }
+
+    /**
+     * Test de la méthode convertirVersDevise2.
+     */
+    @Test
+    public void testConvertirVersDevise2() {
+        System.out.println("testConvertirVersDevise2");
+        Montant montant = new Montant(1.00F, new Devise("Euro", "$", 1.00F));
+        Montant expResult = new Montant(1.06F, new Devise("Dollar", "$", 0.94F));
+        Montant result = Convertisseur.convertirVersDevise(new Devise("Dollar", "$", 0.94F)).apply(montant);
+        assertEquals(expResult, result);
+    }
 }
