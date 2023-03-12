@@ -8,7 +8,13 @@ package convertisseur.poo;
  */
 public class Montant {
 
+    /**
+     * Le nombre de la devise.
+     */
     private final Float nombreDevise;
+    /**
+     * La devise.
+     */
     private final Devise devise;
 
     /**

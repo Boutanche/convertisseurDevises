@@ -68,6 +68,10 @@ public class Convertisseur {
         };
     }
 
+    /**
+     * Version fonctionnelle de la méthode convertir vers Euro en mode Curryfication.
+     * @return Fonction qui prend en paramètre une devise cible et qui retourne le montant converti.
+     */
     public static UnaryOperator<Montant> convertirVersEuroCurryfie() {
         Devise euro = new Devise("Euro", "€", 1.00F);
         return montant -> new Montant(arrondirMontant(montant.getNombreDevise() * montant.getDevise().getValeurEnEuro()/ euro.getValeurEnEuro()), euro);
