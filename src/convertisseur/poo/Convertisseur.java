@@ -1,9 +1,5 @@
 package convertisseur.poo;
 
-import java.util.function.BiFunction;
-import java.util.function.Function;
-import java.util.function.UnaryOperator;
-
 /**
  * Convertisseur class.
  * @author BBE
