@@ -45,4 +45,28 @@ public class ConvertisseurTest {
         float result = Convertisseur.arrondirMontant(montant);
         assertEquals(expResult, result);
     }
+
+    /**
+     * Test de la méthode convertirVersEuro.
+     */
+    @Test
+    public void testConvertirVersEuro() {
+        System.out.println("testConvertirVersEuro");
+        Montant montant = new Montant(1.00F, new Devise("Dollar", "$", 0.94F));
+        Montant expResult = new Montant(0.94F, new Devise("Euro", "€", 1.00F));
+        Montant result = Convertisseur.convertirVersEuro().apply(montant);
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test de la méthode convertirVersDevise.
+     */
+    @Test
+    public void testConvertirVersDevise() {
+        System.out.println("testConvertirVersDevise");
+        Montant montant = new Montant(1.00F, new Devise("Euro", "$", 1.00F));
+        Montant expResult = new Montant(1.06F, new Devise("Dollar", "$", 0.94F));
+        Montant result = Convertisseur.convertirVersDevise(new Devise("Dollar", "$", 0.94F)).apply(montant);
+        assertEquals(expResult, result);
+    }
 }

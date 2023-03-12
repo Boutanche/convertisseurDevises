@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="Poo convertisseur">
-      <change afterPath="$PROJECT_DIR$/src/testsConvertisseur/testsPoo/ConvertisseurTest.java" afterDir="false" />
+    <list default="true" id="655103cb-988e-4555-9d42-df41d01d903f" name="Changes" comment="Conclusion">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/convertisseur/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertisseur/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/convertisseur/poo/Convertisseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertisseur/poo/Convertisseur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/convertisseur/poo/Montant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertisseur/poo/Montant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testsConvertisseur/testsPoo/MontantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testsConvertisseur/testsPoo/MontantTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testsConvertisseur/testsPoo/ConvertisseurTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testsConvertisseur/testsPoo/ConvertisseurTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -36,27 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.testsConvertisseur.testsPoo in convertisseurDevises">
+}</component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="convertisseur.Main" />
       <module name="convertisseurDevises" />
@@ -85,7 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConvertisseurTest.testArrondirMontant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConvertisseurTest.testConvertirVersDevise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="convertisseurDevises" />
       <extension name="coverage">
         <pattern>
@@ -95,13 +98,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="testsConvertisseur.testsPoo" />
       <option name="MAIN_CLASS_NAME" value="testsConvertisseur.testsPoo.ConvertisseurTest" />
-      <option name="METHOD_NAME" value="testArrondirMontant" />
+      <option name="METHOD_NAME" value="testConvertirVersDevise" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConvertisseurTest.testConvertir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConvertisseurTest.testConvertirVersEuro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="convertisseurDevises" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +114,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testsConvertisseur.testsPoo" />
       <option name="MAIN_CLASS_NAME" value="testsConvertisseur.testsPoo.ConvertisseurTest" />
-      <option name="METHOD_NAME" value="testConvertir" />
+      <option name="METHOD_NAME" value="testConvertirVersEuro" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,17 +137,17 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ConvertisseurTest" />
-      <item itemvalue="JUnit.ConvertisseurTest.testArrondirMontant" />
-      <item itemvalue="JUnit.ConvertisseurTest.testConvertir" />
+      <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersDevise" />
+      <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersEuro" />
       <item itemvalue="JUnit.testsConvertisseur.testsPoo in convertisseurDevises" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testsConvertisseur.testsPoo in convertisseurDevises" />
-        <item itemvalue="JUnit.ConvertisseurTest.testArrondirMontant" />
-        <item itemvalue="JUnit.ConvertisseurTest" />
-        <item itemvalue="JUnit.ConvertisseurTest.testConvertir" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersDevise" />
+        <item itemvalue="JUnit.ConvertisseurTest.testConvertirVersEuro" />
+        <item itemvalue="JUnit.ConvertisseurTest" />
+        <item itemvalue="JUnit.testsConvertisseur.testsPoo in convertisseurDevises" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +159,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678546729808</updated>
-      <workItem from="1678546730896" duration="12124000" />
+      <workItem from="1678546730896" duration="26285000" />
+      <workItem from="1678622418938" duration="3327000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1678546913215</created>
@@ -207,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678555101196</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Poo convertisseur">
+      <created>1678562582705</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678562582705</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +254,8 @@
     <MESSAGE value="Classe Montant + MontantTest" />
     <MESSAGE value="Montant.hashCode();" />
     <MESSAGE value="Poo convertisseur" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poo convertisseur" />
+    <MESSAGE value="Conclusion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Conclusion" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/convertisseurDevises$ConvertisseurTest.ic" NAME="ConvertisseurTest Coverage Results" MODIFIED="1678561393387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -258,7 +270,7 @@
     <SUITE FILE_PATH="coverage/convertisseurDevises$ConvertisseurTest_testArrondirMontant.ic" NAME="ConvertisseurTest.testArrondirMontant Coverage Results" MODIFIED="1678562183776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testsConvertisseur.testsPoo.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/convertisseurDevises$Main.ic" NAME="Main Coverage Results" MODIFIED="1678554997218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/convertisseurDevises$Main.ic" NAME="Main Coverage Results" MODIFIED="1678576807382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>convertisseur.*</FILTER>
     </SUITE>
   </component>
