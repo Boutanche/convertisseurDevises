@@ -18,10 +18,23 @@ import java.util.function.UnaryOperator;
  * @version 1.0
  */
 public class Main {
+    /**
+     * Devise Dollar US.
+     */
     final static Devise DOLLAR = new Devise("Dollar US", "$", 0.94F);
+    /**
+     * Devise Euro.
+     */
     final static Devise EURO = new Devise("Euro", "€", 1.00F);
+    /**
+     * Devise Yen.
+     */
     final static Devise YEN = new Devise("Yen", "¥", 0.0087F);
     final static String separator = "--------------------------------------------------";
+    /**
+     * Main method.
+     * @param args Arguments.
+     */
     public static void main(String[] args) {
         System.out.println(separator);
         System.out.println("-- Hello world! Convertisseur de devises : --");
@@ -89,7 +102,6 @@ public class Main {
         System.out.println("10.50 Euro = " + converti7.getNombreDevise() + " " + converti7.getDevise().getSymbole());
         System.out.println("1.00 Euro = " + converti8.getNombreDevise() + " " + converti8.getDevise().getSymbole());
     }
-
 
     /**
      * Conclusion

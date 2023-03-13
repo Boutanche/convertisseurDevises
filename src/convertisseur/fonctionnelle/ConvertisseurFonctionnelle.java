@@ -19,7 +19,11 @@ import java.util.function.UnaryOperator;
  * @version 1.0
  */
 public class ConvertisseurFonctionnelle {
+    /**
+     * Devise Euro.
+     */
     static final Devise EURO = new Devise("Euro", "€", 1.00F);
+
     /**
      * Constructeur privé pour empêcher l'instanciation de la classe.
      */
@@ -57,8 +61,7 @@ public class ConvertisseurFonctionnelle {
      * @return Fonction qui prend en paramètre une devise cible et qui retourne le montant converti.
      */
     public static UnaryOperator<Montant> convertirVersEuroCurryfie() {
-        Devise euro = new Devise("Euro", "€", 1.00F);
-        return montant -> new Montant(convertisseur.poo.Convertisseur.arrondirMontant(montant.getNombreDevise() * montant.getDevise().getValeurEnEuro()/ euro.getValeurEnEuro()), euro);
+        return montant -> new Montant(convertisseur.poo.Convertisseur.arrondirMontant(montant.getNombreDevise() * montant.getDevise().getValeurEnEuro()/ EURO.getValeurEnEuro()), EURO);
     }
 
 
