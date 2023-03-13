@@ -21,24 +21,32 @@ public class Main {
     /**
      * Devise Dollar US.
      */
-    final static Devise DOLLAR = new Devise("Dollar US", "$", 0.94F);
+    static final Devise DOLLAR = new Devise("Dollar US", "$", 0.94F);
     /**
      * Devise Euro.
      */
-    final static Devise EURO = new Devise("Euro", "€", 1.00F);
+    static final Devise EURO = new Devise("Euro", "€", 1.00F);
     /**
      * Devise Yen.
      */
-    final static Devise YEN = new Devise("Yen", "¥", 0.0087F);
-    final static String separator = "--------------------------------------------------";
+    static final Devise YEN = new Devise("Yen", "¥", 0.0087F);
+    /**
+     * Separator.
+     */
+    static final String SEPARATOR = "--------------------------------------------------";
+    /**
+     * 10.00 Dollar US.
+     */
+    static final String DIX_DOLLAR = "10.00 Dollar US = ";
+
     /**
      * Main method.
      * @param args Arguments.
      */
     public static void main(String[] args) {
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         System.out.println("-- Hello world! Convertisseur de devises : --");
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         partie1();
         partie2();
         partie3();
@@ -49,13 +57,13 @@ public class Main {
      */
     private static void partie1() {
         System.out.println();
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         System.out.println("           En utilisant la POO :");
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         System.out.println("1.00 Dollar US = 0.94 Euro");
         Montant dixDollar = new Montant(10.00F, DOLLAR);
         Montant converti1 = Convertisseur.convertir(dixDollar, EURO);
-        System.out.println("10.00 Dollar US = " + converti1.getNombreDevise() + " " + converti1.getDevise().getSymbole());
+        System.out.println(DIX_DOLLAR + converti1.getNombreDevise() + " " + converti1.getDevise().getSymbole());
         Montant dixEuro = new Montant(10.00F, EURO);
         Montant converti2 = Convertisseur.convertir(dixEuro, DOLLAR);
         System.out.println("10.00 Euro = " + converti2.getNombreDevise() + " " + converti2.getDevise().getSymbole());
@@ -66,13 +74,13 @@ public class Main {
      */
     private static void partie2() {
         System.out.println();
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         System.out.println("En utilisant la Programmation Fonctionnelle :");
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         Montant dixDollar2 = new Montant(10.00F, DOLLAR);
         UnaryOperator<Montant> convertirVersEuro = ConvertisseurFonctionnelle.convertirVersEuro();
         Montant converti3 = convertirVersEuro.apply(dixDollar2);
-        System.out.println("10.00 Dollar US = " + converti3.getNombreDevise() + " " + converti3.getDevise().getSymbole());
+        System.out.println(DIX_DOLLAR + converti3.getNombreDevise() + " " + converti3.getDevise().getSymbole());
         Montant dixEuro2 = new Montant(10.00F, EURO);
         UnaryOperator<Montant> convertirVersDollar = ConvertisseurFonctionnelle.convertirVersDevise(DOLLAR);
         Montant converti4 = convertirVersDollar.apply(dixEuro2);
@@ -84,13 +92,13 @@ public class Main {
      */
     private static void partie3() {
         System.out.println();
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         System.out.println(" Curryfié avec Programmation Fonctionnelle : ");
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         Montant dixDollar3 = new Montant(10.00F, DOLLAR);
         UnaryOperator<Montant> convertirVersEuroCurry = ConvertisseurFonctionnelle.convertirVersEuroCurryfie();
         Montant converti5 = convertirVersEuroCurry.apply(dixDollar3);
-        System.out.println("10.00 Dollar US = " + converti5.getNombreDevise() + " " + converti5.getDevise().getSymbole());
+        System.out.println(DIX_DOLLAR + converti5.getNombreDevise() + " " + converti5.getDevise().getSymbole());
         Function<Devise, UnaryOperator<Montant>> fabriquerConvertisseurEuroVersYen = ConvertisseurFonctionnelle.fabriquerConvertisseur(YEN, EURO);
         Montant unEuro = new Montant(1.00F, EURO);
         Montant dixEurosCinquanteCentimes = new Montant(10.50F, EURO);
@@ -108,9 +116,9 @@ public class Main {
      */
     private static void conclusion() {
         System.out.println();
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         System.out.println("--               Conclusion              : --");
-        System.out.println(separator);
+        System.out.println(SEPARATOR);
         System.out.println();
         String textBlock = """
                 L'approche orientée objet (POO) offre des avantages et des limites par rapport aux implémentations fonctionnelles.
