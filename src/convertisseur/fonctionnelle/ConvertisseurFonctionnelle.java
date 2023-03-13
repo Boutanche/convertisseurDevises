@@ -19,7 +19,7 @@ import java.util.function.UnaryOperator;
  * @version 1.0
  */
 public class ConvertisseurFonctionnelle {
-
+    static final Devise EURO = new Devise("Euro", "€", 1.00F);
     /**
      * Constructeur privé pour empêcher l'instanciation de la classe.
      */
@@ -33,12 +33,8 @@ public class ConvertisseurFonctionnelle {
      */
     public static UnaryOperator<Montant> convertirVersEuro() {
         return montantOrigine -> {
-            Devise deviseCible = new Devise("Euro", "€", 1.00F);
-            float montantConverti = (montantOrigine.getNombreDevise() * montantOrigine.getDevise().getValeurEnEuro()) / deviseCible.getValeurEnEuro();
-            Float roundMontantConverti = convertisseur.poo.Convertisseur.arrondirMontant(montantConverti);
-            Montant newMontant = new Montant(roundMontantConverti, deviseCible);
-            System.out.println("Montant converti : " + newMontant.getNombreDevise() + " " + newMontant.getDevise().getSymbole());
-            return newMontant;
+            UnaryOperator<Montant> convertirVersEuro = convertirVersDevise(EURO);
+            return convertirVersEuro.apply(montantOrigine);
         };
     }
 

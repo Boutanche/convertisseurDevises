@@ -21,11 +21,20 @@ public class Main {
     final static Devise DOLLAR = new Devise("Dollar US", "$", 0.94F);
     final static Devise EURO = new Devise("Euro", "€", 1.00F);
     final static Devise YEN = new Devise("Yen", "¥", 0.0087F);
+    final static String separator = "--------------------------------------------------";
     public static void main(String[] args) {
-        final String separator = ("---------------------------------------------");
         System.out.println(separator);
         System.out.println("-- Hello world! Convertisseur de devises : --");
         System.out.println(separator);
+        partie1();
+        partie2();
+        partie3();
+        conclusion();
+    }
+    /**
+     * Partie 1 : Programmation Orientée Objet
+     */
+    private static void partie1() {
         System.out.println();
         System.out.println(separator);
         System.out.println("           En utilisant la POO :");
@@ -37,6 +46,12 @@ public class Main {
         Montant dixEuro = new Montant(10.00F, EURO);
         Montant converti2 = Convertisseur.convertir(dixEuro, DOLLAR);
         System.out.println("10.00 Euro = " + converti2.getNombreDevise() + " " + converti2.getDevise().getSymbole());
+    }
+
+    /**
+     * Partie 2 : Programmation Fonctionnelle
+     */
+    private static void partie2() {
         System.out.println();
         System.out.println(separator);
         System.out.println("En utilisant la Programmation Fonctionnelle :");
@@ -49,6 +64,12 @@ public class Main {
         UnaryOperator<Montant> convertirVersDollar = ConvertisseurFonctionnelle.convertirVersDevise(DOLLAR);
         Montant converti4 = convertirVersDollar.apply(dixEuro2);
         System.out.println("10.00 Euro = " + converti4.getNombreDevise() + " " + converti4.getDevise().getSymbole());
+    }
+
+    /**
+     * Partie 3 : Programmation Fonctionnelle
+     */
+    private static void partie3() {
         System.out.println();
         System.out.println(separator);
         System.out.println(" Curryfié avec Programmation Fonctionnelle : ");
@@ -67,14 +88,18 @@ public class Main {
         System.out.println("1.00 Euro = " + converti6.getNombreDevise() + " " + converti6.getDevise().getSymbole());
         System.out.println("10.50 Euro = " + converti7.getNombreDevise() + " " + converti7.getDevise().getSymbole());
         System.out.println("1.00 Euro = " + converti8.getNombreDevise() + " " + converti8.getDevise().getSymbole());
+    }
+
+
+    /**
+     * Conclusion
+     */
+    private static void conclusion() {
         System.out.println();
         System.out.println(separator);
         System.out.println("--               Conclusion              : --");
         System.out.println(separator);
         System.out.println();
-        conclusion();
-    }
-    private static void conclusion() {
         String textBlock = """
                 L'approche orientée objet (POO) offre des avantages et des limites par rapport aux implémentations fonctionnelles.
                  -- - Voici quelques points à considérer :
